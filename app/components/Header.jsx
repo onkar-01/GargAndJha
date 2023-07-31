@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Link from "./link";
 import Button from "./Button";
 
+import Bounce from "react-reveal/Bounce";
 const Header = () => {
   const [open, setOpen] = useState(false);
+
   if (typeof document !== "undefined") {
     const menuBth = document.querySelector(".menu-btn");
     const hamburger = document.querySelector(".menu-btn__burger");
@@ -30,10 +32,16 @@ const Header = () => {
       }
     });
   }
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector(".header");
+      header.classList.toggle("scrolled", window.scrollY > 0);
+    });
+  }
   return (
     <>
-      <div className="header  fixed flex z-10  lg:justify-around w-screen text-white top-5">
-        <div className="sidebar lg:hidden">
+      <div className="header  fixed flex z-10  lg:justify-around w-screen text-white top-3">
+        <div className="sidebar  lg:hidden">
           <div class="menu-btn">
             <span class="menu-btn__burger"></span>
           </div>
@@ -62,15 +70,18 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className=" relative logo mx-auto left-5 top-1 animate__animated animate__flipInX">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            className=""
-            width={200}
-            height={100}
-          />
-        </div>
+
+        <Bounce top>
+          <div className=" relative logo mx-auto left-5 top-2 ">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              className="sm:w-[230px]"
+              width={200}
+              height={100}
+            />
+          </div>
+        </Bounce>
         <div className="hidden w-[0px] md:w-full md:links lg:flex md:gap-x-5 md:justify-center md:items-center">
           <Link href="/" name="HOME" />
           <Link href="/about" name="ABOUT" />

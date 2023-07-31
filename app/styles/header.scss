@@ -14,7 +14,7 @@
     position: absolute;
     right: 0;
     top: 0.5rem;
-    width: 28px;
+    width: 20px;
     height: 3px;
     background-color: set-text-color($primary-color);
     @include transition-ease;
@@ -33,7 +33,7 @@
       content: " ";
       position: absolute;
       top: 8px;
-      width: 20px;
+      width: 15px;
       height: 3px;
       background-color: set-text-color($primary-color);
       @include transition-ease;
@@ -115,4 +115,15 @@
   .menu-nav__item:nth-child(#{$i}) {
     transition-delay: 0.1s * $i;
   }
+}
+
+.scrolled {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: $secondary-color;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
 }
