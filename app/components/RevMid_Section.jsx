@@ -31,7 +31,8 @@ const RevMid_Section = ({ content, image }) => {
               src={image}
               alt=""
               className="rounded-tl-[50px] rounded-br-[50px]"
-              layout="fill"
+              width={500}
+              height={500}
             />
           </div>
         </Slide>
