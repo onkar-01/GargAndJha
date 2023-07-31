@@ -7,6 +7,17 @@ const Mid_Section = ({ image }) => {
     <div>
       <div className="flex flex-col md:flex-row flex-2 w-[90%] sm:w-[80%] mx-auto my-10">
         <Slide right>
+          <div className="image md:w-[50%]  md:p-10 p-4 ">
+            <Image
+              src={image}
+              alt=""
+              className="rounded-tl-[50px] rounded-br-[50px]"
+              width={500}
+              height={500}
+            />
+          </div>
+        </Slide>
+        <Slide left>
           <div className="content md:w-[50%] md:p-10">
             <p className="text-[18px] text-justify">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -23,17 +34,6 @@ const Mid_Section = ({ image }) => {
               quibusdam reprehenderit voluptatem cupiditate quidem quis quaerat
               doloribus, nesciunt fugit!
             </p>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="image md:w-[50%]  md:p-10 p-4 ">
-            <Image
-              src={image}
-              alt=""
-              className="rounded-tl-[50px] rounded-br-[50px]"
-              width={500}
-              height={500}
-            />
           </div>
         </Slide>
       </div>
