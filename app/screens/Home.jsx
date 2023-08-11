@@ -5,6 +5,8 @@ import Title from "../components/Title";
 import AboutUs from "../components/AboutUs";
 import Mid_Section from "../components/Mid_Section";
 import RevMid_Section from "../components/RevMid_Section";
+import Services from "../components/Service";
+import AboutInNumbers from "../components/AboutInNumbers";
 
 const home = () => {
   return (
@@ -15,7 +17,18 @@ const home = () => {
       <Title heading="Why Choose Us" />
       <Mid_Section content="" image="/WhyWe.png" />
       <Title heading="What We Do" />
-      <RevMid_Section content="" image="/WhatWe.png" />
+      <div className="hidden lg:block">
+        <RevMid_Section content="" image="/WhatWe.png" />
+      </div>
+      <div className="lg:hidden">
+        <Mid_Section content="" image="/WhatWe.png" />
+      </div>
+      <Title heading="Service we provide" />
+      <div className="services">
+        <Services />
+      </div>
+      <Title />
+      <AboutInNumbers heading="Confidentiality" />
     </div>
   );
 };

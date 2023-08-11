@@ -5,7 +5,7 @@ import Image from "next/image";
 const RevMid_Section = ({ content, image }) => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row flex-2 w-[90%] sm:w-[80%] mx-auto my-10">
+      <div className="flex flex-col lg:flex-row flex-2 w-[90%] sm:w-[80%] mx-auto my-10">
         <Slide right>
           <div className="content md:w-[50%] md:p-10">
             <p className="text-[18px] text-justify">
@@ -30,7 +30,7 @@ const RevMid_Section = ({ content, image }) => {
             <Image
               src={image}
               alt=""
-              className="rounded-tl-[50px] rounded-br-[50px]"
+              className="rounded-tr-[50px] rounded-bl-[50px] mx-auto"
               width={500}
               height={500}
             />
