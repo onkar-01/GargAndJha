@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { GetInTouch } from "../components/GetInTouch";
-import SpeedDial from "../components/SpeedDial";
 
 const images = ["home.png", "home2.png", "home3.png"];
 
@@ -46,9 +45,6 @@ const Home = () => {
         <div className="w-[48] sm:w-[50%] mx-auto">
           <GetInTouch />
         </div>
-      </div>
-      <div className="relative justify-end">
-        <SpeedDial />
       </div>
 
       <svg
