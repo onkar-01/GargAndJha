@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import { Slide } from "react-awesome-reveal";
+import Slide from "react-reveal/Slide";
 import Image from "next/image";
 
 const Mid_Section = ({ image }) => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row flex-2 w-[90%] lg:w-[80%] mx-auto my-10">
-        <Slide direction="right">
+        <Slide right>
           <div className="image  lg:w-[50%]  md:p-10 p-4 ">
             <Image
               src={image}
@@ -18,7 +18,7 @@ const Mid_Section = ({ image }) => {
             />
           </div>
         </Slide>
-        <Slide direction="left">
+        <Slide left>
           <div className="content lg:w-[50%] md:p-10">
             <p className="text-[18px] text-justify">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
