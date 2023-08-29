@@ -1,5 +1,4 @@
 "use client";
-import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 
 const RevMid_Section = ({ content, image }) => {
@@ -7,7 +6,7 @@ const RevMid_Section = ({ content, image }) => {
     <div>
       <div className="flex flex-col lg:flex-row flex-2 w-[90%] sm:w-[80%] mx-auto my-10">
         <div className="content md:w-[50%] md:p-10">
-          <Slide direction="right">
+          <>
             <p className="text-[18px] text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               minus laborum adipisci iure ducimus, enim reiciendis ab sed
@@ -28,10 +27,10 @@ const RevMid_Section = ({ content, image }) => {
               rem nulla quibusdam debitis voluptas, ratione recusandae nam
               labore unde aliquid illum consequuntur repellendus repellat.{" "}
             </p>
-          </Slide>
+          </>
         </div>
         <div className="image md:w-[50%] md:p-10 p-4 ">
-          <Slide direction="left">
+          <>
             <Image
               src={image}
               alt=""
@@ -39,7 +38,7 @@ const RevMid_Section = ({ content, image }) => {
               width={500}
               height={500}
             />
-          </Slide>
+          </>
         </div>
       </div>
     </div>
