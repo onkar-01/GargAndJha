@@ -1,4 +1,4 @@
-"use client"
+"use client";
 const AboutUs = () => {
   const containerClasses = "flex w-[90%] sm:w-[80%] mx-auto my-10";
   const paragraphClasses = "text-[18px] text-justify";
