@@ -7,38 +7,38 @@ import Link from "next/link";
 
 import Bounce from "react-reveal/Bounce";
 const Header = () => {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  // if (typeof document !== "undefined") {
-  //   const menuBth = document.querySelector(".menu-btn");
-  //   const hamburger = document.querySelector(".menu-btn__burger");
+  if (typeof document !== "undefined") {
+    const menuBth = document.querySelector(".menu-btn");
+    const hamburger = document.querySelector(".menu-btn__burger");
 
-  //   const nav = document.querySelector(".nav");
-  //   const menuNav = document.querySelector(".menu-nav");
-  //   const navItems = document.querySelectorAll(".menu-nav__item");
+    const nav = document.querySelector(".nav");
+    const menuNav = document.querySelector(".menu-nav");
+    const navItems = document.querySelectorAll(".menu-nav__item");
 
-  //   menuBth.addEventListener("click", () => {
-  //     if (!open) {
-  //       hamburger.classList.add("open");
-  //       nav.classList.add("open");
-  //       menuNav.classList.add("open");
-  //       navItems.forEach((item) => item.classList.add("open"));
-  //       setOpen(true);
-  //     } else {
-  //       hamburger.classList.remove("open");
-  //       nav.classList.remove("open");
-  //       menuNav.classList.remove("open");
-  //       navItems.forEach((item) => item.classList.remove("open"));
-  //       setOpen(false);
-  //     }
-  //   });
-  // }
-  // if (typeof window !== "undefined") {
-  //   window.addEventListener("scroll", () => {
-  //     const header = document.querySelector(".header");
-  //     header.classList.toggle("scrolled", window.scrollY > 0);
-  //   });
-  // }
+    menuBth.addEventListener("click", () => {
+      if (!open) {
+        hamburger.classList.add("open");
+        nav.classList.add("open");
+        menuNav.classList.add("open");
+        navItems.forEach((item) => item.classList.add("open"));
+        setOpen(true);
+      } else {
+        hamburger.classList.remove("open");
+        nav.classList.remove("open");
+        menuNav.classList.remove("open");
+        navItems.forEach((item) => item.classList.remove("open"));
+        setOpen(false);
+      }
+    });
+  }
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector(".header");
+      header.classList.toggle("scrolled", window.scrollY > 0);
+    });
+  }
   return (
     <>
       <div className="header  fixed flex z-10  lg:justify-around w-screen text-white top-3">
