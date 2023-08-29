@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
 import FormContainer from "./FormContainer";
 import Input from "./Input";
 
 export const GetInTouch = () => {
   return (
     <FormContainer className="">
-      <div className=" relative max-w-sm h-[450px] bg-white  rounded-2xl px-8 py-8 mx-auto">
+      <div className="relative max-w-sm h-[450px] bg-white rounded-2xl px-8 py-8 mx-auto">
         <div className="title w-[80%] border-b-2 border-[#c08e02] m-auto">
           <h1 className="text-center text-xl">Get In Touch</h1>
         </div>

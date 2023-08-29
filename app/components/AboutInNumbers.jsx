@@ -1,25 +1,35 @@
 "use client";
-import React from "react";
 import NumberAnimation from "./NumberAnimation";
 
-const AboutNumbers = ({ Heading, state }) => {
+const AboutNumbers = ({ heading, state }) => {
+  const numberContainerClasses = `number text-[#c08e02] flex flex-col`;
+
   return (
     <div>
-      <div className="number text-[#c08e02] flex flex-col">
+      <div className={numberContainerClasses}>
         <NumberAnimation state={state} />
       </div>
-      <div className="number_name  ">{Heading}</div>
+      <div className="number_name">{heading}</div>
     </div>
   );
 };
 
 const AboutInNumbers = () => {
+  const aboutNumbersData = [
+    { heading: "Confidentiality", state: 1 },
+    { heading: "Cases Solved" },
+    { heading: "Amount Settled" },
+    { heading: "Active Cases" },
+  ];
+
+  const containerClasses =
+    "w-screen h-auto my-20 flex flex-wrap justify-around";
+
   return (
-    <div className="w-screen  h-auto my-20 flex flex-wrap justify-around">
-      <AboutNumbers Heading="Confidentiality" state={1} />
-      <AboutNumbers Heading="Cases Solved" />
-      <AboutNumbers Heading="Amount Settled" />
-      <AboutNumbers Heading="Active Cases" />
+    <div className={containerClasses}>
+      {aboutNumbersData.map((data, index) => (
+        <AboutNumbers key={index} {...data} />
+      ))}
     </div>
   );
 };

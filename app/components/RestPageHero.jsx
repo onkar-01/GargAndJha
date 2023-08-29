@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 const Hero = ({ imgSrc }) => {
   const style = {
@@ -7,7 +7,8 @@ const Hero = ({ imgSrc }) => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   };
-  return <div className="h-[626px] bg-contain " style={style}></div>;
+
+  return <div className="h-[626px] bg-contain" style={style}></div>;
 };
 
 export default Hero;

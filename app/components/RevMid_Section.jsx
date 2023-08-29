@@ -1,42 +1,46 @@
 "use client";
-import React from "react";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 
 const RevMid_Section = ({ content, image }) => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row flex-2 w-[90%] sm:w-[80%] mx-auto my-10">
-        <Slide right>
-          <div className="content md:w-[50%] md:p-10">
+        <div className="content md:w-[50%] md:p-10">
+          <Slide direction="right">
             <p className="text-[18px] text-justify">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Quibusdam sapiente recusandae labore consectetur eos est ex fugiat
-              consequatur voluptatem expedita, delectus ipsa totam ut doloremque
-              mollitia vero soluta voluptas eveniet necessitatibus accusamus.
-              Perferendis magni molestias illo, harum fuga voluptates
-              laboriosam. Placeat recusandae numquam alias ipsum sit labore
-              possimus nulla vitae ducimus eligendi quam ut enim, laudantium
-              quae tenetur aliquid minus porro. Quidem sapiente modi qui
-              distinctio, architecto quia temporibus velit unde suscipit magnam
-              necessitatibus exercitationem eum saepe aut. Sapiente ad nulla at
-              quisquam officiis ducimus eligendi dolore quas maxime! Fuga
-              quibusdam reprehenderit voluptatem cupiditate quidem quis quaerat
-              doloribus, nesciunt fugit!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              minus laborum adipisci iure ducimus, enim reiciendis ab sed
+              nesciunt tempore vero, doloremque quod sit culpa perferendis
+              recusandae at? Tempore quod adipisci in impedit animi, commodi
+              nisi excepturi molestiae doloremque odit unde vel corporis
+              blanditiis non illo veniam quidem accusantium at tenetur magni
+              fugiat deleniti assumenda quae. Perspiciatis consectetur quod iure
+              deserunt sapiente dicta numquam, nesciunt eius, est nisi officiis
+              incidunt cumque aspernatur ipsa fugit saepe cum aut magnam in
+              quaerat! Autem odio quidem rerum facilis ea aut excepturi ex,
+              voluptates, ad neque veritatis ipsam impedit. Beatae voluptatem
+              error quas quos. Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Voluptas laboriosam sequi nesciunt maiores.
+              Dicta odit nostrum asperiores architecto, amet, numquam facere
+              libero quae, vel natus voluptate consequatur exercitationem
+              laboriosam temporibus commodi impedit? Excepturi, iure! Quaerat
+              rem nulla quibusdam debitis voluptas, ratione recusandae nam
+              labore unde aliquid illum consequuntur repellendus repellat.{" "}
             </p>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="image md:w-[50%] md:p-10 p-4 ">
+          </Slide>
+        </div>
+        <div className="image md:w-[50%] md:p-10 p-4 ">
+          <Slide direction="left">
             <Image
               src={image}
               alt=""
-              className="rounded-tr-[50px] rounded-bl-[50px] mx-auto"
+              className="rounded-tr-[50px]   rounded-bl-[50px] mx-auto"
               width={500}
               height={500}
             />
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
     </div>
   );

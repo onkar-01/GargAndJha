@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Hero from "../components/RestPageHero";
 import Title from "../components/Title";
@@ -9,7 +8,7 @@ const NewsAndUpdates = () => {
     <div>
       <Hero imgSrc={"/news&updates.png"} />
       <Title heading={"News & Updates"} />
-      <div className="news flex flex-wrap justify-around ">
+      <div className="news flex flex-wrap justify-around">
         <NewsCard />
         <NewsCard />
         <NewsCard />

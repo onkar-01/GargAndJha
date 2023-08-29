@@ -1,12 +1,11 @@
-"use client";
-import React from "react";
 import Image from "next/image";
 import Title from "../components/Title";
 import ContactUs from "../components/ContactUs";
+import MapComponent from "../components/Map";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <div className="relative">
         <Image
           src="/contact.png"
@@ -20,12 +19,14 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-container my-10 lg:space-x-5 mx-auto w-[95%] lg:flex">
-        <div className="form-container w-[100%] ">
+        <div className="form-container w-full lg:w-[50%]">
           <ContactUs />
         </div>
-        <div className="map-container w-[100%] "></div>
+        <div className="map-container w-full lg:w-[50%]">
+          <MapComponent />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

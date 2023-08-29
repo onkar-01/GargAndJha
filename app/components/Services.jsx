@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+"use client"
 import { WiTime12 } from "react-icons/wi";
 import { TbHomeOff, TbSettingsDown } from "react-icons/tb";
 import { PiCurrencyCircleDollar } from "react-icons/pi";
@@ -11,7 +10,7 @@ const Service = ({ name, icon, state }) => {
       {state ? (
         <div className="icon icon-container text-[#c08e02]">{icon}</div>
       ) : (
-        <div className="icon  text-[#c08e02]">{icon}</div>
+        <div className="icon text-[#c08e02]">{icon}</div>
       )}
 
       <div className="name service-name h-[50px] flex justify-center items-center">
@@ -27,7 +26,7 @@ const Services = () => {
       <Service
         name="Delayed Possession"
         icon={<WiTime12 className="rotate-icon" size={94} />}
-        state="1"
+        state={1}
       />
       <Service
         name="No Construction"

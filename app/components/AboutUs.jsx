@@ -1,11 +1,12 @@
-"use client";
-import React from "react";
-
+"use client"
 const AboutUs = () => {
+  const containerClasses = "flex w-[90%] sm:w-[80%] mx-auto my-10";
+  const paragraphClasses = "text-[18px] text-justify";
+
   return (
-    <div className=" flex w-[90%] sm:w-[80%] mx-auto my-10">
+    <div className={containerClasses}>
       <div>
-        <p className="text-[18px] text-justify">
+        <p className={paragraphClasses}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           iure non. Exercitationem perspiciatis vel doloremque sequi est commodi
           quis ad vero aperiam aspernatur, provident laborum minima suscipit
