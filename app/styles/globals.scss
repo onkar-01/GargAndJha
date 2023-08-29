@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,400;1,300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "link";
+@import "button";
+@import "form";
+@import "header";
+@import "services";
+@import "title";
+@import "aboutInNumbers";
+@import "teamProfile";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000;
+  color: white;
+}
+textarea:focus,
+input:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+}
+
+// title ----------------------------->
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: $primary-color;
+}

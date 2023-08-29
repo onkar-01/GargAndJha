@@ -1,0 +1,33 @@
+.icon-container {
+  display: inline-block;
+  animation: rotate 4s linear infinite; /* 4s duration, linear timing, infinite loop */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Starting rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Ending rotation, completes the full circle */
+  }
+}
+
+.service-name {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.gradient-border {
+  width: 200px;
+  height: 200px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #c08e02, #fff) 1;
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(233, 231, 231, 0.5);
+}
+.gradient-border:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(251, 250, 250, 0.5);
+}
